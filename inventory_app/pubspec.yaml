@@ -1,0 +1,27 @@
+name: inventory_app
+description: "A beautiful Inventory Management App with royal blue theme."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  animated_splash_screen: ^1.3.0
+  lottie: ^3.1.2
+  font_awesome_flutter: ^10.7.0
+  flutter_animate: ^4.5.0   # 👈 ye missing tha (adds animate(), ms, etc.)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
