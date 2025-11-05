@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       IconButton(
                         icon: const Icon(Icons.delete, color: Colors.redAccent),
                         onPressed: () async {
-                          await api.deleteItem(item.id);
+                          await api.deleteItem(item.id); // ✅ String ID
                           refresh();
                         },
                       ),

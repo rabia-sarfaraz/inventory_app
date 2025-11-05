@@ -81,7 +81,12 @@ class _AddItemScreenState extends State<AddItemScreen> {
                   if (_formKey.currentState!.validate()) {
                     _formKey.currentState!.save();
                     await api.addItem(
-                      Item(id: 0, name: name, quantity: quantity, price: price),
+                      Item(
+                        id: '', // 🔹 backend assigns the ID
+                        name: name,
+                        quantity: quantity,
+                        price: price,
+                      ),
                     );
                     if (context.mounted) Navigator.pop(context);
                   }
